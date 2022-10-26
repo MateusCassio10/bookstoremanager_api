@@ -1,6 +1,7 @@
 package com.mateus.bookstoremanager.users.entity;
 
 import com.mateus.bookstoremanager.books.entity.Book;
+import com.mateus.bookstoremanager.entity.Auditable;
 import com.mateus.bookstoremanager.users.enums.Gender;
 import lombok.Data;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class User {
+public class User extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

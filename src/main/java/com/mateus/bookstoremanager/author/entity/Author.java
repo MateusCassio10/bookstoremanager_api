@@ -1,6 +1,7 @@
 package com.mateus.bookstoremanager.author.entity;
 
 import com.mateus.bookstoremanager.books.entity.Book;
+import com.mateus.bookstoremanager.entity.Auditable;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,7 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Author {
+public class Author extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
